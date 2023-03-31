@@ -1,0 +1,228 @@
+
+/* NAVIGATION PROPERTIES*/
+.nav_div {
+    
+  height: 40px;
+    width: 100%;
+}
+
+body{
+  background-color: #ffffee;
+}
+
+.nav_ulist {
+   
+    position:fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 40%;
+    overflow: hidden;
+    background-color:#ff232b;
+    width: 100%;
+
+  }
+  
+  
+  li {
+    float: left;
+  }
+
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*Active color on navigation bar*/
+  .active {
+    background-color:#002B5B;
+  }
+  
+  h2{
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Verdana;
+  }
+  h3{
+
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: lighter;
+  }
+  
+  .tr_news_div{
+    text-align: center;
+  }
+  .trnewstext{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+ /* div and img properties*/
+  .tr_news_div .tr_news_img{
+    
+   
+    height: 360px; 
+    width: 640px;
+
+  }
+  .calendar_div .cal_img{
+   
+   height: 360px; 
+   width: 640px;
+   
+  }
+  .calendar_div{
+     text-align: center;
+  }
+/*quick explanation text of f1*/
+  .exp{
+    
+    text-align: center;
+    margin-left:30%;
+    margin-right: 30%;
+    font-family: Verdana;
+    
+  }
+
+  .news{
+   
+    background-color:#002B5B;
+    color:yellow;
+    text-align: center;
+  }
+  .calendartitle{
+    background-color: #002B5B;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+  }
+  footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #bdbaba;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+
+  }
+  /*CIRCUIT PAGE PROPERTIES*/
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .caption {
+    background-color: #002B5B;
+    font-size: 25px;
+    margin-top: 10px;
+    color: yellow;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .cir_img{
+    width: 300px;
+    height: 210px;
+  }
+  
+  /*LEGEND PAGE CSS */
+  .container {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .legenddiv {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .legendimg{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+  }
+
+  .legendtitle{
+    text-align: center;
+  }
+
+  .abouttext{
+    text-align: center;
+  }
+  
+  .aboutP{
+    max-width: 100%;
+    font-size: larger;
+    background-color: #f1f1f1;
+  }
+  
+  /*ABOUT PAGE CSS*/
+
+  .contact-box {
+    text-align: center;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .contact-box h2 {
+    margin-top: 0;
+    font-size: 35px;
+  }
+  
+  .contact-box p {
+    font-size: 20px;
+  }
+  
+  .contact-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .contact-box li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-box a {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contact-box a:hover {
+    color: #007bff;
+  }
+  
+  
+  
