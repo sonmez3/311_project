@@ -3,14 +3,16 @@
 .nav_div {
     
   height: 40px;
-    width: 100%;
+  width: 100%;
+  
 }
 
 body{
   background-color: #ffffee;
+  overflow-y: scroll;
 }
 
-.nav_ulist {
+ .nav_ulist {
    
     position:fixed;
     top: 0;
@@ -205,7 +207,7 @@ body{
   .contact-box ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 20px ;
   }
   
   .contact-box li {
@@ -223,6 +225,6 @@ body{
   .contact-box a:hover {
     color: #007bff;
   }
-  
+
   
   
