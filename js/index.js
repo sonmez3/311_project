@@ -13,7 +13,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     races = [
-  
+
         {
             "id": "required-id-2",
             "name": "testing",
@@ -80,3 +80,31 @@ function getRandomColor() {
     }
     return color;
 }
+
+$(document).ready(function () {
+    var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?";
+    var tags = "f1";
+    var count = 12;
+
+    $.getJSON(flickrAPI, {
+        tags: tags,
+        per_page: count
+    })
+    .done(function (data) {
+        var html = "";
+        $.each(data.items, function (i, item) {
+            if (i < count) {
+                html += '<img src="' + item.media.m + '">';
+            }
+        });
+        $(".fotorama").html(html);
+
+        $(".fotorama").fotorama({
+            loop: true,
+            autoplay: true
+        });
+    })
+    .fail(function (error) {
+        console.log("Error fetching Flickr photos: " + error);
+    });
+});
