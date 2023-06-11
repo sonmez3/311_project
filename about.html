@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>About</title>
-</head>
+    <title>About</title>  
+      <!--JQUERY UI-->
+
+      <script src="js/jquery-3.6.0.js"></script>
+      <script src="js/ui-min.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+      
+      
+       
 <header>
     <!-- navigation bar-->
     <div class="nav_div">
@@ -46,7 +53,34 @@
             Thank you for visiting our page, and we hope you enjoy our content and community!
         </p>
 
+
     </div>
+    
+               
+
+                <form id="form">
+                    <table class="table" >
+                        <tr>
+                            <td> <label for="">Name Surname:</label> </td>
+                            <td><input id="form-name" type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="race">Race</label>
+                            </td>
+                            <td><input id="race"type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> Email:</label></td>
+                            <td> <input id="form-email" type="text"></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> Comment:</label></td>
+                            <td> <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea> </td>
+                        </tr>
+                    </table>
+                    <button id="sub" type="button" style="margin-bottom: 30px;">Submit</button>
+                </form>
     <!-- In the last page learn last properties hover and sub class reaching without using class names-->
     <div class="contact-box">
         <h2>Contact Us</h2>
@@ -57,8 +91,10 @@
           <li><a href="https://www.linkedin.com/in/baran-sönmez1188/" > LinkedIn</a></li>
         </ul>
       </div>
-      
 
+
+      
+<script src="js/about.js"></script>
 
 </body>
  <!--footer of pages-->

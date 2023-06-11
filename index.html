@@ -5,7 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="evoClnd/evo-calendar.css">
+    <link rel="stylesheet" href="evoClnd/evo-calendar.royal-navy.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+  
+
+    <script src="jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="evoClnd/evo-calendar.js" ></script>
+   
+   
+
+
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="fotorama-4.6.4/fotorama.css" rel="stylesheet">
+    <script src="fotorama-4.6.4/fotorama.js"></script>
 
     <title>Formula-1</title>
 
@@ -26,6 +46,15 @@
 </header>
 
 <body>
+    
+
+    <div class="bac-color"> 
+       
+    
+    <button onclick="changeBackgroundColor()">Change to random color</button>
+</div> 
+    
+
     <!--bod of a home page classes are used in css-->
     <div class="exp">
         <h3>
@@ -46,7 +75,19 @@
         <h2>
             'Turkey also in talks with F1 to replace Chinese Grand Prix in 2023'
         </h2>
-        <img class="tr_news_img" src="images/News/turkeygpNews.png" alt="turkeypng">
+        <!-- Add images to <div class="fotorama"></div> -->
+        <!-- Add images to <div class="fotorama"></div> -->
+
+      
+       
+        <div class="fotorama" data-width="50%" data-height="50%" data-autoplay="true" data-loop="true">
+            <img src="images/News/turkeygpNews.png" data-caption="Turkey GP 2020" >
+            <img src="images/News/trgp-2005.jpeg" data-caption="First Turkey GP 2005">
+            <img src="images/News/trgp-crash.jpeg" data-caption="2010 Vettel & Webber crash">
+            <img src="images/News/2020qualy.avif" data-caption="2020 Qualify">
+        
+        </div>
+      
     </div>
     <div class="trnewstext">
         
@@ -66,17 +107,22 @@
        Current 2023 Calendar 
     </h1>
 
-    <div class="calendar_div"> <img class="cal_img" src="images/calendar.png" alt="calendarpng"></div>
+ 
+      </script>
+
+      <!--CALENDAR -------------------------------------------->
+     
+      <div id="calendar"></div>
+   
+            
+      <!--CALENDAR END-------------------------------------------->
+   
+   
+</body>
     <!--footer of pages-->
-    <footer>
+ <footer>
         <p>&copy; 2023 Baran Sonmez. All rights reserved.</p>
         <p>Contact via E-mail: <a href="mailto:baran.sonmez1188@gmail.com">baran.sonmez1188@gmail.com</a></p>
       </footer>
-      
-
-
-
-</body>
-
 
 </html>
