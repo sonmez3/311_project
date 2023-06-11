@@ -20,3 +20,16 @@ $(document).ready(function() {
      show: { effect: "blind", duration: 800 }
    });
  });
+
+   
+
+ $( function() {
+   $( "#tabs" ).tabs({
+     
+     
+     
+     //hide: { effect: "explode", duration: 1000 }
+     show: { effect: "blind", duration: 200 }
+   });
+ } );
+ 
